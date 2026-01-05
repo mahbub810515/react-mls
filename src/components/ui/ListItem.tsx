@@ -1,8 +1,9 @@
+import type { navListType } from "../type/Type"
 
 
-const ListItem = () => {
+const ListItem = ({key,item}:{key:null,item:navListType}) => {
     return (
-        <li>Home</li>
+        <li key={key}>{item.title}</li>
     )
 }
 
