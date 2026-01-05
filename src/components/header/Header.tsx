@@ -26,17 +26,17 @@ const Header = () => {
         },
     ])
     return (
-        <header className="bg-green-400">
+        <header className="bg-primary py-4">
             <nav>
                 <Container>
-                    <Flex className="justify-between">
+                    <Flex className="justify-between items-center">
                         <img src="images/logo.png" alt="logo" />
-                        <ul>
+                        <ul className="flex gap-5 text-white text-2xl font-semibold">
                             {navList.map((item) => (
                                 <ListItem key={item.id} item={item} />
                             ))}
                         </ul>
-                        <Button title="কোর্স দেখুন" />
+                        <Button  title="কোর্স দেখুন" />
                     </Flex>
                 </Container>
 
