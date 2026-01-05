@@ -36,7 +36,7 @@ const Header = () => {
                                 <ListItem key={item.id} item={item} />
                             ))}
                         </ul>
-                        <Button className="bg-button rounded px-14 py-1 font-semibold text-2xl text-white" title="কোর্স দেখুন" />
+                        <Button className="bg-button hover:bg-green-400 rounded px-14 py-1 font-semibold text-2xl text-white" title="কোর্স দেখুন" />
                     </Flex>
                 </Container>
 
