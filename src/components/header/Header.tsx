@@ -2,6 +2,7 @@ import { useState } from "react"
 import Container from "../common/Container"
 import ListItem from "../ui/ListItem"
 import type { navListType } from "../type/Type"
+import Button from "../ui/Button"
 
 
 const Header = () => {
@@ -31,9 +32,9 @@ const Header = () => {
                     <ul>
                         {navList.map((item)=>(
                         <ListItem key={item.id} item={item}/>
-                        ))}
-                        
+                        ))}                        
                     </ul>
+                    <Button title="কোর্স দেখুন"/>                    
                 </Container>
 
             </nav>
