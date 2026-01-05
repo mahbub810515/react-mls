@@ -1,10 +1,11 @@
-import Header from "./components/Header"
+import Header from "./components/header/Header"
+
 
 
 const App = () => {
   return (
     <main>
-      <Header/>      
+      <Header/>     
     </main>
   )
 }
