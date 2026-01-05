@@ -31,12 +31,12 @@ const Header = () => {
                 <Container>
                     <Flex className="justify-between items-center">
                         <img src="images/logo.png" alt="logo" />
-                        <ul className="flex gap-5 text-white text-2xl font-semibold">
+                        <ul className="flex gap-5 text-white text-xl font-semibold">
                             {navList.map((item) => (
                                 <ListItem key={item.id} item={item} />
                             ))}
                         </ul>
-                        <Button  title="কোর্স দেখুন" />
+                        <Button className="bg-button rounded px-14 py-1 font-semibold text-2xl text-white" title="কোর্স দেখুন" />
                     </Flex>
                 </Container>
 
