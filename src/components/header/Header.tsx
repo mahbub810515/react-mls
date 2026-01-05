@@ -3,38 +3,41 @@ import Container from "../common/Container"
 import ListItem from "../ui/ListItem"
 import type { navListType } from "../type/Type"
 import Button from "../ui/Button"
+import Flex from "../common/Flex"
 
 
 const Header = () => {
-    const [navList,setNavList]=useState<navListType[]>([
+    const [navList, setNavList] = useState<navListType[]>([
         {
-            id:1,
-            title:"হোম"
+            id: 1,
+            title: "হোম"
         },
         {
-            id:2,
-            title:"আমাদের কোর্সসমহ"
+            id: 2,
+            title: "আমাদের কোর্সসমহ"
         },
         {
-            id:3,
-            title:"যোগাযোগ"
+            id: 3,
+            title: "যোগাযোগ"
         },
         {
-            id:4,
-            title:"ক্যারিয়ার গাইডলাইন"
+            id: 4,
+            title: "ক্যারিয়ার গাইডলাইন"
         },
     ])
     return (
         <header className="bg-green-400">
             <nav>
                 <Container>
-                    <img src="images/logo.png" alt="logo" />
-                    <ul>
-                        {navList.map((item)=>(
-                        <ListItem key={item.id} item={item}/>
-                        ))}                        
-                    </ul>
-                    <Button title="কোর্স দেখুন"/>                    
+                    <Flex className="justify-between">
+                        <img src="images/logo.png" alt="logo" />
+                        <ul>
+                            {navList.map((item) => (
+                                <ListItem key={item.id} item={item} />
+                            ))}
+                        </ul>
+                        <Button title="কোর্স দেখুন" />
+                    </Flex>
                 </Container>
 
             </nav>
